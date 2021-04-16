@@ -1,0 +1,151 @@
+version: "2.0"
+stories:
+- story: happy non vegetarian path 1
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: non_veg
+  - action: utter_non_veg
+  - intent: order_name_non_veg
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+- story: happy non vegetarian path 2
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: non_veg
+  - action: utter_non_veg
+  - intent: order_name_non_veg
+  - action: utter_anythingelse
+  - intent: affirm
+  - action: utter_options
+  - intent: beverage
+  - action: utter_beverage
+  - intent: order_beverage
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+- story: happy veg path 1
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: vegetarian
+  - action: utter_veg
+  - intent: order_name_veg
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+- story: happy veg path 2
+  steps:
+    - intent: greet
+    - action: utter_botgreet
+    - intent: what_do_you_have
+    - action: utter_options
+    - intent: vegetarian
+    - action: utter_veg
+    - intent: order_name_veg
+    - action: utter_anythingelse
+    - intent: affirm
+    - action: utter_options
+    - intent: dessert
+    - action: utter_dessert
+    - intent: order_dessert
+    - action: utter_anythingelse
+    - intent: deny
+    - action: utter_thanks
+- story: happy dessert path
+  steps:
+    - intent: greet
+    - action: utter_botgreet
+    - intent: what_do_you_have
+    - action: utter_options
+    - intent: dessert
+    - action: utter_dessert
+    - intent: order_dessert
+    - action: utter_anythingelse
+    - intent: deny
+    - action: utter_thanks
+- story: happy beverage path
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: beverage
+  - action: utter_beverage
+  - intent: order_beverage
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+- story: happy veg non-veg path
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: non_veg
+  - action: utter_non_veg
+  - intent: order_name_non_veg
+  - action: utter_anythingelse
+  - intent: affirm
+  - action: utter_options
+  - intent: vegetarian
+  - action: utter_veg
+  - intent: order_name_veg
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+#- story: Story from Conversation ID 8c28bdb7617144b8b9b35dd7f826fd1c
+#  steps:
+#  - action: utter_veg_non_veg
+#  - intent: greet
+#  - action: utter_veg
+#  - intent: order_name_veg
+#  - action: utter_anythingelse
+#  - intent: deny
+#  - action: utter_thanks
+- story: Story from Conversation ID 402cb906a45341058f42e19baf6075ba
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: what_do_you_have
+  - action: utter_options
+  - intent: vegetarian
+  - action: utter_veg
+  - intent: order_name_veg
+  - action: utter_anythingelse
+  - intent: affirm
+  - action: utter_options
+  - intent: non-veg
+  - action: utter_non_veg
+  - intent: order_name_non_veg
+  - action: utter_anythingelse
+  - intent: affirm
+  - action: utter_options
+  - intent: deny
+  - action: utter_thanks

@@ -1,0 +1,146 @@
+version: "2.0"
+nlu:
+- intent: what_do_you_have
+  examples: |
+    - what can i get here?
+    - what can i have to eat?
+    - what can i get for the lunch?
+    - what is this place famous for ?
+    - what can i get to eat
+    - i need food
+    - i am hungry
+- intent: vegetarian
+  examples: |
+    - vegetarian
+    - veg
+    - pure veg
+    - pure veggie
+    - i want vegetarian food
+    - pure vegetarian
+- intent: non-veg
+  examples: |
+    - non-veg
+    - non-vegetarian
+    - pure non-veg
+    - not veg
+    - non veg
+- intent: dessert
+  examples: |
+    - dessert
+    - sweet
+    - cake
+    - sweet dish
+- intent: beverage
+  examples: |
+    - beverage
+    - drinks
+    - something to drink
+    - refreshment
+- intent: order_name_veg
+  examples: |
+    - get me 1 mix veg and paneer butter masala
+    - i want 1 mix veg and masala mushroom
+    - i want green salad
+    - a paneer butter masala
+    - i want paneer tikka
+    - mashroom masala
+- intent: order_name_non_veg
+  examples: |
+    - get me 1 egg curry and chicken butter masala
+    - i want 1 egg fry and fish curry
+    - i want 5 boiled eggs
+    - butter chicken
+    - mutton biryani
+    - i want chicken biryani
+    - boiled eggs
+- intent: order_dessert
+  examples: |
+    - i want gulab jamun
+    - i want rasmalai
+    - i want gajar halwa
+    - gajrela
+    - fruit custurd
+- intent: order_beverage
+  examples: |
+    - mango lassi
+    - buttermilk
+    - plain lassi
+    - jal jeera
+    - nimbu soda
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nothing
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

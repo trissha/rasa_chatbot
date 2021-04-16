@@ -1,0 +1,89 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- what_do_you_have:
+    use_entities: true
+- vegetarian:
+    use_entities: true
+- non_veg:
+    use_entities: true
+- order_name_veg:
+    use_entities: true
+- order_name_non_veg:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- dessert:
+    use_entites: true
+- beverage:
+    use_entites: true
+- order_dessert:
+    use_entities: true
+- order_beverage:
+    use_entities: true
+
+entities: []
+slots: {}
+responses:
+  utter_botgreet:
+  - text: How can i help you today?
+  utter_options:
+    - text: 'what would you prefer:'
+      buttons:
+        - title: Vegetarian
+          payload: /vegetarian
+        - title: Non-Vegetarian
+          payload: /non_veg
+        - title: Dessert
+          payload: /dessert
+        - title: Beverage
+          payload: /beverage
+
+  utter_veg:
+  - text: 'Please check our vegetarian menu:'
+    image: "https://10619-2.s.cdn12.com/rests/original/502_503540941.jpg"
+  utter_non_veg:
+  - text: 'Please check our Non-Veg menu:'
+    image: "https://scontent.fybz2-1.fna.fbcdn.net/v/t1.6435-9/71327527_2943235389023349_6977045235570311168_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=vJxpxibxGeoAX-K74Mt&_nc_ht=scontent.fybz2-1.fna&oh=aec607b3169cc57703b73ddcef155a2c&oe=609F4805"
+  utter_dessert:
+  - text: 'Please check our dessert menu:'
+    image: "http://shivshakti-restaurant.com/des_bev.jpg"
+  utter_beverage:
+  - text: 'Please check our beverage menu:'
+    image: "http://shivshakti-restaurant.com/des_bev.jpg"
+  utter_anythingelse:
+  - text: Is there any thing else you would want, Trisha?
+  utter_thanks:
+  - text: Thanks. We will get your order shortly.
+  utter_goodbye:
+  - text: Bye
+#  utter_greet:
+#  - text: Hey! How are you?
+#  utter_cheer_up:
+#  - image: https://i.imgur.com/nGF1K8f.jpg
+#    text: 'Here is something to cheer you up:'
+#  utter_did_that_help:
+#  - text: Did that help you?
+#  utter_happy:
+#  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions: []
+forms: {}
+e2e_actions: []
